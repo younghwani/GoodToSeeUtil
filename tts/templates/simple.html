@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Fastspeech2</title>
+    <style></style>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                let speech = $("input[name=speech]").val();
+                let lang = $("select[name=lang]").val();
+                let rate= $("select[name=rate]").val();
+                let freq= $("select[name=freq]").val();
+
+                console.log(speech);
+                console.log(lang);
+                console.log(rate);
+                console.log(freq);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/static/audio.wav",
+                    data: {speech: speech, switch: lang, rate: rate, freq: freq},
+                    success: function (response) {
+                        if (response['result'] == 'success') {
+                            // alert('okay');
+                            makeAudio();
+                        }
+                    }
+                })
+
+                // Snippet for Flask (not RESTful)
+                // $.ajax({
+                //     type: "POST",
+                //     url: "/static/audio.wav",
+                //     data: {speech: speech, switch: lang, rate: rate, freq: freq},
+                //     success: function (response) {
+                //         makeAudio();
+                //     }
+                // })
+            })
+        });
+
+        function makeAudio() {
+            // disable this snippet when using Flask
+            $.ajax({
+                type: "GET",
+                url: "/static/audio.wav",
+                data: {},
+                success: function (response) {
+                    $(".audio-box").empty();
+                    let tempHtml = `<audio controls>
+                        <source src="/static/audio.wav" type="audio/wav">
+                        </audio>`;
+                    $(".audio-box").append(tempHtml);
+                }
+            })
+            //
+
+            // For Flask (non-RESTful quick fix)
+            // $(".audio-box").empty();
+            // let tempHtml = `<audio controls>
+            //             <source src="/static/audio.wav" type="audio/x-wav">
+            //             </audio>`;
+            // $(".audio-box").append(tempHtml);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        텍스트: <input type="text" name="speech"><br>
+        언어: <select name="lang" size="1">
+        <option>0</option><option>1</option>
+        </select><br>
+        속도: <select name="rate" size="1">
+        <option>0.7</option><option>1.0</option><option>1.5</option>
+        </select><br>
+        피치: <select name="freq" size="1">
+        <option>0.7</option><option>1.0</option><option>1.5</option>
+        </select><br>
+        <button type="button" class="submit">submit</button>
+    </div>
+    <div class="audio-box"></div>
+</body>
+
+</html>
