@@ -40,6 +40,6 @@ from pascal_voc_writer import Writer
 명도 조절(bright), 무작위 위치에 박스 생성(box),  
 모션 블러(motion blur), 채도 조정(color),  
 픽셀화(pixel), 선명도 조정(sharpness), 드롭아웃(dropout)  
-
+<br><br>
 ---
 ![캡처2](https://user-images.githubusercontent.com/67620728/131684992-ca0b7a87-c22b-44ec-ba76-fbf93138c0e0.PNG)
