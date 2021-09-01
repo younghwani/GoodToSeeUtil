@@ -15,7 +15,7 @@ Mac, Window
 * 라이브러리 사용
 ```python
 import os
-from time impor sleep
+from time import sleep
 ```
 
 
