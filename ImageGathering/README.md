@@ -1,6 +1,9 @@
-# GoodToSee
+# ImageGathering
 
-- 데이터청년캠퍼스 한국외국어대학교 과정
-- Team GoodToSee
+이 파일은 데이터 전처리 과정에서 사용합니다. 모델의 정확도를 위해서는 양질의 다량 이미지 데이터가 필요합니다.    
+이미지로 학습 데이터를 모으는 것보다 영상을 촬영하신 후 영상의 프레임 별로 이미지를 나누어 데이터를 확보하는 것이 효율적입니다.
+따라서 높은 프레임으로 영상 설정을 하신 후 상품을 다양한 각도로 영상녹화하시고 이미지로 나누실 때 이 코드를 사용하실 수 있습니다.
 
-- 발표자료 : https://github.com/younghwani/GoodToSeeUtil/blob/master/GoodToSee_ppt.pdf
+* 사용 라이브러리
+CV2, OS
+
