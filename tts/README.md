@@ -32,7 +32,7 @@ uvicorn==0.15.0<br>
 | [templates]/: 서버 웹페이지 템플릿을 보관.<br>
 | [tensorflow_tts]/: 딥러닝 및 음성합성에 사용할 TensorflowTTS. Forked from https://github.com/crux153/TensorflowTTS<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [bin]/: 언어별로 음성/텍스트를 전처리하는 코드 보관.<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - preprocess.py: 전처리기. process 폴더 내의 전처리 코드들과 연동되어 있습니다.<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - preprocess.py: 전처리기. processor 폴더 내의 전처리 코드들과 연동되어 있습니다.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [configs]/: 각 모델별 hyperparameter 값을 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [datasets]/: 훈련할 모델별 데이터셋 loader 소스코드를 보관.<br> 
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - abstract_dataset.py: 원하는 학습모델에 맞게 코드를 수정하여 사용합니다.<br>
