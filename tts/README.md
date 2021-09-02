@@ -46,4 +46,4 @@ uvicorn==0.15.0<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [utils]/: 한국어 사전, decoder, griffin_lim vocoder 등 추가 유틸리티 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - main.py: TTS syntehsizer + FastAPI server. (TTS의 경우, huggingface에 저장된 pre-trained model을 웹을 통해 불러와 합성을 진행합니다)<br>
 <br>
-NOTE: 훈련 시 생성할 하위폴더의 세부 구조는 다음 링크를 참조하세요(https://github.com/crux153/TensorflowTTS). 전처리를 거친 후에는 하위폴더 [dump_] 내에 훈련할 .wav 파일이 .npy로 변환되어 저장됩니다.
+NOTE: 훈련 시 활용할 음성파일 폴더의 세부 구조는 다음 링크를 참조하세요(https://github.com/crux153/TensorflowTTS). 전처리를 거친 후에는 하위폴더 [dump_] 내에 훈련할 .wav 파일이 .npy로 변환되어 저장됩니다.
