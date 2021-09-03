@@ -37,7 +37,7 @@ uvicorn==0.15.0<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [datasets]/: 훈련할 모델별 데이터셋 loader 소스코드를 보관.<br> 
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - abstract_dataset.py: 원하는 학습모델에 맞게 코드를 수정하여 사용합니다.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [inference]/: config, model, processor를 묶어서 모듈화한 코드 보관.<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - auto_processor.py: 특정 데이터셋에 대해 구현된 전처리기들과, 글자별 상응하는 숫자의 mapper 설정을 가져오는 기능을 합니다. 해당 작업은 from_pretrained(cls, pretrained_path) 함수가 수행합니다.<br>  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - auto_processor.py: 특정 데이터셋에 대해 구현된 전처리기들과, 글자별 상응하는 숫자의 mapper 설정을 가져오는 기능을 합니다. 해당 작업은 from_pretrained(cls, pretrained_path) 함수가 수행합니다.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [losses]/: 오차 측정, 순전파, 역전파에 관련된 클래스와 메소드 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [models]/: 구현된 딥러닝 모델 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [optimizers]/: 최적화 함수 보관.<br>
