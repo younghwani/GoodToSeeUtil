@@ -46,7 +46,7 @@ uvicorn==0.15.0<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [trainers]/: 모델별 훈련을 진행할 코드 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| [utils]/: 한국어 처리기, decoder, griffin_lim vocoder 등 추가 유틸리티 보관.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - korean.py: 한국어 전처리기입니다. 특수한 문자열(영어약자, 숫자, 한자, 문장부호 등)을 한국어 문자열로 바꾸고, 해당 문자열을 음소로 풀어쓰기하기 위한 처리기가 정의되어 있습니다. 한국어 풀어쓰기는 jamo 라이브러리를 import해와서 구현합니다. 만약에 정의되어 있지 않은 key:value 페어가 있다면, 본 파일에 포함된 딕셔너리에 정의하면 됩니다.<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - cleaners.py: 텍스트를 각 언어별 mapper.json에 정의된 범위 내의 텍스트로 바꾸는 과정을 실질적으로 수행합니다. 앞서 말씀드렸듯 한국어 tokenizer의 경우 korean.py로 저장되어 있으므로, 이를 import해와 사용합니다.
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - cleaners.py: 텍스트를 각 언어별 mapper.json에 정의된 범위 내의 텍스트로 바꾸는 과정을 실질적으로 수행합니다. 앞서 말씀드렸듯 한국어 tokenizer의 경우 korean.py로 저장되어 있으므로, 이를 import해와 사용합니다.<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;| - main.py: TTS syntehsizer + FastAPI server. (TTS의 경우, huggingface에 저장된 pre-trained model을 웹을 통해 불러와 합성을 진행합니다)<br>
 <br>
 NOTE: 훈련 시 활용할 음성파일 폴더의 세부 구조는 다음 링크를 참조하세요(https://github.com/crux153/TensorflowTTS). 전처리를 거친 후에는 하위폴더 [dump_] 내에 훈련할 .wav 파일이 .npy로 변환되어 저장됩니다.
