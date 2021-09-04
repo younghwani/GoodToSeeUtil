@@ -27,7 +27,6 @@ pypinyin==0.42.0<br>
 scikit-learn==0.24.2<br>
 scipy==1.4.1<br>
 SoundFile==0.10.3<br>
-tensorflow==2.4.0<br>
 tqdm==4.62.2<br>
 unidecode==1.2.0<br>
 uvicorn==0.15.0<br>
