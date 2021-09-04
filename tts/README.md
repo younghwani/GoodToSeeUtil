@@ -15,6 +15,7 @@ Tensorflow Addons >= 0.10.0<br>
 ### Modules
 fastapi==0.68.1<br>
 german-transliterate==0.1.3<br>
+h5py==2.10
 inflect==5.3.0<br>
 jamo==0.4.1<br>
 jinja2==3.0.1<br>
@@ -30,6 +31,9 @@ tensorflow==2.4.0<br>
 tqdm==4.62.2<br>
 unidecode==1.2.0<br>
 uvicorn==0.15.0<br>
+
+* german-transliterate는 다음 코드를 사용하여 설치합니다: !pip install git+https://github.com/repodiac/german_transliterate<br>
+
 
 ## Folders
 | [static]/: 생성된 오디오(.wav) 파일을 보관. (음성합성이 새로 이루어질 때마다 기존 파일을 덮어씌워 저장합니다)<br>
