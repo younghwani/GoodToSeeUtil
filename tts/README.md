@@ -4,13 +4,13 @@
 
 ## Requirements
 ### Environments
-Python==3.7+<br>
+Python==3.6+<br>
 Cuda==10.1<br>
 CuDNN==7.6.5<br>
 Tensorflow==2.3/2.4/2.5/2.6<br>
 Tensorflow Addons >= 0.10.0<br>
 
-* Tensorflow와 Tensorflow Addons는 서로 호환되는 버전이어야 합니다. 예컨대, Python 3.6에서 tensorflow==2.3이 설치되어 있을 경우, tensorflow-addons==0.12.1을 설치하기를 권장합니다. 버전 호환표는 다음 페이지를 참고하세요: https://github.com/tensorflow/addons<br>
+* Tensorflow와 Tensorflow Addons는 서로 호환되는 버전이어야 합니다. 예컨대, Python 3.6에서 cudatoolkit==11.3, tensorflow==2.3이 설치되어 있을 경우, tensorflow-addons==0.12.1을 설치하기를 권장합니다. 버전 호환표는 다음 페이지를 참고하세요: https://github.com/tensorflow/addons<br>
 
 ### Modules
 fastapi==0.68.1<br>
