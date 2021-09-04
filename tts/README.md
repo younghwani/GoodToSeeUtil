@@ -10,9 +10,12 @@ CuDNN==7.6.5<br>
 Tensorflow==2.3/2.4/2.5/2.6<br>
 Tensorflow Addons >= 0.10.0<br>
 
+* Tensorflow와 Tensorflow Addons는 서로 호환되는 버전이어야 합니다. 예컨대, Python 3.6에서 tensorflow==2.3이 설치되어 있을 경우, tensorflow-addons==0.12.1을 설치하기를 권장합니다. 버전 호환표는 다음 페이지를 참고하세요: https://github.com/tensorflow/addons<br>
+
 ### Modules
 fastapi==0.68.1<br>
 german-transliterate==0.1.3<br>
+inflect==5.3.0<br>
 jamo==0.4.1<br>
 jinja2==3.0.1<br>
 librosa==0.8.1<br>
@@ -25,6 +28,7 @@ scipy==1.4.1<br>
 SoundFile==0.10.3<br>
 tensorflow==2.4.0<br>
 tqdm==4.62.2<br>
+unidecode==1.2.0<br>
 uvicorn==0.15.0<br>
 
 ## Folders
