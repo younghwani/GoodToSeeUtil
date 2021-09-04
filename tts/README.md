@@ -15,7 +15,7 @@ Tensorflow Addons >= 0.10.0<br>
 ### Modules
 fastapi==0.68.1<br>
 german-transliterate==0.1.3<br>
-h5py==2.10
+h5py==2.10<br>
 inflect==5.3.0<br>
 jamo==0.4.1<br>
 jinja2==3.0.1<br>
