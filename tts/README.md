@@ -14,12 +14,14 @@ Tensorflow Addons >= 0.10.0<br>
 
 ### Modules
 fastapi==0.68.1<br>
-german-transliterate==0.1.3<br>
+german-transliterate==0.1.3*<br>
+g2p-en==2.1.0<br>
 h5py==2.10<br>
 inflect==5.3.0<br>
 jamo==0.4.1<br>
 jinja2==3.0.1<br>
 librosa==0.8.1<br>
+matplotlib==3.3.4<br>
 nltk==3.6.2<br>
 num2words==0.5.10<br>
 numpy==1.19.5<br>
