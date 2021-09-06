@@ -2,6 +2,12 @@
 
 - TTS 모듈 및 온라인 배포를 위한 API입니다.
 
+## How to Use
+1) Python 3.6+ 이상 가상환경 생성
+2) /tts 폴더에서 pip install -r requirements.txt 실행
+2) IDE 등을 이용하여 main.py 파일 실행
+3) localhost:5000에 접속해서 시연
+
 ## Requirements
 ### Environments
 Python==3.6+<br>
@@ -14,14 +20,12 @@ Tensorflow Addons >= 0.10.0<br>
 
 ### Modules
 fastapi==0.68.1<br>
-german-transliterate==0.1.3*<br>
-g2p-en==2.1.0<br>
+german-transliterate==0.1.3<br>
 h5py==2.10<br>
 inflect==5.3.0<br>
 jamo==0.4.1<br>
 jinja2==3.0.1<br>
 librosa==0.8.1<br>
-matplotlib==3.3.4<br>
 nltk==3.6.2<br>
 num2words==0.5.10<br>
 numpy==1.19.5<br>
